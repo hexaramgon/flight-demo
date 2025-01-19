@@ -95,3 +95,23 @@ label{
     background-color: white !important;
     font-size: 13px !important;
 }
+
+@media (max-width: 868px) {
+    .row {
+      flex-direction: column;  /* Flex items are arranged in a column */
+    }
+
+    .col-1{
+        width: 100%;
+        margin-bottom: 1em ;
+    }
+
+    .map-panel{
+        width: 100%;
+        margin: 0em;
+    }
+    .sub-form{
+        margin-left: 0px;
+        width: 100%;
+    }
+  }

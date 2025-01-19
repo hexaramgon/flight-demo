@@ -1,11 +1,12 @@
 import React from 'react';
 import './customcard.css';
 
-const CustomCard1 = ({ title, number }) => {
+const CustomCard1 = ({ title, number, svg }) => {
   return (
     <div className='outer-card'>
       <div className='row-1'>
         <div className="image-box">
+        {svg}
         </div>
         <div>
           <p className='title'>{title}</p>

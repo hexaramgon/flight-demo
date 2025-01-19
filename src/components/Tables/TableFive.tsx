@@ -1,4 +1,5 @@
 import React from 'react'
+import './customtable.css'
 
 interface User {
   name: string;
@@ -9,52 +10,52 @@ interface User {
 
 const users: User[] = [
   {
-    name: 'Musharof Chowdhury',
-    title: 'Multidisciplinary Web Entrepreneur',
+    name: 'Dec 16th, 2024',
+    title: 'N12435',
     email: 'musharof@example.com',
-    role: 'Owner',
+    role: 'Interior Level 1, Interior Level 2 ',
   },
   {
-    name: 'Naimur Rahman',
-    title: 'Website Front-end Developer',
+    name: 'Dec 16th, 2024',
+    title: 'N124235',
     email: 'naimurrahman@example.com',
-    role: 'Member',
+    role: 'Interior Level 1',
   },
   {
-    name: 'Shafiq Hammad',
-    title: 'Regional Paradigm Technician',
+    name: 'Dec 16th, 2024',
+    title: 'N1245',
     email: 'shafiq.hd@example.com',
-    role: 'Moderator',
+    role: 'Exterior Level 1, Interior Level 2 ',
   },
   {
-    name: 'Alex Semuyel',
-    title: 'Applications Engineer',
+    name: 'Dec 16th, 2024',
+    title: 'N11245',
     email: 'alex.semuel@example.com',
-    role: 'Admin',
+    role: 'Exterior Level 2 ',
   },
   {
-    name: 'Sulium Keliym',
-    title: 'Lead Implementation Liaison',
+    name: 'Dec 14th, 2024',
+    title: 'N112945',
     email: 'suliym.info@example.com',
-    role: 'Member',
+    role: 'Interior Level 1, Exterior Level 2 ',
   },
   {
-    name: 'Jhon Smith',
-    title: 'Regional Paradigm Technician',
+    name: 'Dec 16th, 2024',
+    title: 'N11945',
     email: 'jhon.smith@example.com',
-    role: 'Admin',
+    role: 'Interior Level 1, Interior Level 2 ',
   },
   {
-    name: 'Jenifer Lofess',
-    title: 'Multidisciplinary Web Entrepreneur',
+    name: 'Dec 15th, 2024',
+    title: 'N119459',
     email: 'loffes.cooper@example.com',
-    role: 'Member',
+    role: 'Exterior Level 1 ',
   },
   {
-    name: 'Devid Deekook',
-    title: 'Central Security Manager',
+    name: 'Dec 15th, 2024',
+    title: 'N19459',
     email: 'devid.decok@example.com',
-    role: 'Moderator',
+    role: 'Exterior Level 1 ',
   },
 ];
 
@@ -62,9 +63,9 @@ const TableFive: React.FC = () => {
   return (
     <div className="overflow-hidden rounded-[10px]">
       <div className="max-w-full overflow-x-auto">
-        <div className="min-w-[670px]">
+        <div className="min-w-[470px]">
           {/* table header start */}
-          <div className="grid grid-cols-12 bg-[#F9FAFB] px-5 py-4 dark:bg-meta-4 lg:px-7.5 2xl:px-11">
+          <div className="grid grid-cols-12 bg-[#F9FAFB] px-2 py-1 dark:bg-meta-4 lg:px-7.5 2xl:px-11">
             <div className="col-span-3">
               <h5 className="font-small text-[#637381] dark:text-bodydark">
                 DATE
@@ -85,7 +86,7 @@ const TableFive: React.FC = () => {
             </div>
 
 
-            <div className="col-span-2">
+            <div className="col-span-4">
               <h5 className="font-small text-[#637381] dark:text-bodydark">
                 SERVICE
               </h5>
@@ -115,11 +116,13 @@ const TableFive: React.FC = () => {
 
                 <div className="col-span-2">
                   <p className="text-[#637381] dark:text-bodydark">
-                    {user.role}
+                  <button className="override-succ inline-flex rounded-full border border-primary py-1 px-3 text-xs font-small text-primary hover:opacity-80">
+                    Completed
+                  </button>
                   </p>
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-4">
                 <p className="text-[#637381] dark:text-bodydark">
                     {user.role}
                   </p>                
