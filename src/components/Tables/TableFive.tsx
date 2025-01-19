@@ -116,7 +116,7 @@ const TableFive: React.FC = () => {
 
                 <div className="col-span-2">
                   <p className="text-[#637381] dark:text-bodydark">
-                  <button className="override-succ inline-flex rounded-full border border-primary py-1 px-3 text-xs font-small text-primary hover:opacity-80">
+                  <button className="override-succ inline-flex rounded-full border border-primary py-1 px-3 text-xs font-small  hover:opacity-80">
                     Completed
                   </button>
                   </p>

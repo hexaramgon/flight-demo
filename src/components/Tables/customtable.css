@@ -1,7 +1,7 @@
 .override-succ{
 color: #4A5D43;
 background: radial-gradient(46.87% 194.44% at 50.43% 100%, #D8E9D0 0%, #FFFFFF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-border: 1px solid #C2DEB7;
+border: 1px solid #C2DEB7 !important;
 margin-left: -10px;
 }
 

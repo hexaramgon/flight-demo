@@ -1,0 +1,11 @@
+.override{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important; 
+    justify-content: right !important;
+}
+
+button{
+    padding-left: 1.5em;
+
+}

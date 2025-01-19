@@ -19,8 +19,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
   const storedSidebarExpanded = localStorage.getItem('sidebar-expanded');
   const [sidebarExpanded, setSidebarExpanded] = useState(
-true
+    true
   );
+
 
   // close on click outside
   useEffect(() => {
@@ -60,8 +61,8 @@ true
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${
-        sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:relative ${
+        sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:w-0'
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
@@ -69,12 +70,6 @@ true
         <NavLink to="/">
           <img src={Logo} alt="Logo" />
         </NavLink>
-
-        <button
-            aria-controls="sidebar"
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="z-99999 block rounded-sm border border-stroke bg-white p-1.5 shadow-sm dark:border-strokedark dark:bg-boxdark lg:hidden"
-          ></button>
 
         <button
           ref={trigger}
