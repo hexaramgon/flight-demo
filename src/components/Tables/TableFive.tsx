@@ -62,30 +62,32 @@ const TableFive: React.FC = () => {
   return (
     <div className="overflow-hidden rounded-[10px]">
       <div className="max-w-full overflow-x-auto">
-        <div className="min-w-[1170px]">
+        <div className="min-w-[670px]">
           {/* table header start */}
           <div className="grid grid-cols-12 bg-[#F9FAFB] px-5 py-4 dark:bg-meta-4 lg:px-7.5 2xl:px-11">
             <div className="col-span-3">
-              <h5 className="font-medium text-[#637381] dark:text-bodydark">
-                NAME
+              <h5 className="font-small text-[#637381] dark:text-bodydark">
+                DATE
               </h5>
             </div>
 
             <div className="col-span-3">
-              <h5 className="font-medium text-[#637381] dark:text-bodydark">
-                TITLE
+              <h5 className="font-small text-[#637381] dark:text-bodydark">
+                TAIL NUMBER
               </h5>
             </div>
 
-            <div className="col-span-3">
-              <h5 className="font-medium text-[#637381] dark:text-bodydark">
-                EMAIL
-              </h5>
-            </div>
 
             <div className="col-span-2">
-              <h5 className="font-medium text-[#637381] dark:text-bodydark">
-                ROLE
+              <h5 className="font-small text-[#637381] dark:text-bodydark">
+                STATUS
+              </h5>
+            </div>
+
+
+            <div className="col-span-2">
+              <h5 className="font-small text-[#637381] dark:text-bodydark">
+                SERVICE
               </h5>
             </div>
           </div>
@@ -96,7 +98,7 @@ const TableFive: React.FC = () => {
             {users.map((user, index) => (
               <div
                 key={index}
-                className="grid grid-cols-12 border-t border-[#EEEEEE] px-5 py-4 dark:border-strokedark lg:px-7.5 2xl:px-11"
+                className="grid grid-cols-12 border-t border-[#EEEEEE] px-2 py-3 dark:border-strokedark sm:px-6.5 2xl:px-7"
               >
                 <div className="col-span-3">
                   <p className="text-[#637381] dark:text-bodydark">
@@ -110,11 +112,6 @@ const TableFive: React.FC = () => {
                   </p>
                 </div>
 
-                <div className="col-span-3">
-                  <p className="text-[#637381] dark:text-bodydark">
-                    {user.email}
-                  </p>
-                </div>
 
                 <div className="col-span-2">
                   <p className="text-[#637381] dark:text-bodydark">
@@ -123,8 +120,10 @@ const TableFive: React.FC = () => {
                 </div>
 
                 <div className="col-span-1">
-                  <button className="float-right text-primary">Edit</button>
-                </div>
+                <p className="text-[#637381] dark:text-bodydark">
+                    {user.role}
+                  </p>                
+                  </div>
               </div>
             ))}
           </div>

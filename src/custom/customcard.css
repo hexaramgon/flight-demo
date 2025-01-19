@@ -1,0 +1,78 @@
+.outer-card{
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    width: 200px;
+    flex: 1;
+}
+
+.image-box{
+    height: 55px;
+    width: 55px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    margin: 1em;
+}
+
+.row-1{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.number{
+    color: black;
+    font-size: 24px;
+    padding-top: 0.3em;
+}
+
+.bottom-row{
+    background: #f7f7f7;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 1em;
+    transition: all 0.3s ease;   /* Smooth transition for all properties over 0.3 seconds */
+}
+
+.bottom-row:hover{
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+span{
+    font-size: 14px;
+    margin-right: 0.5em;
+}
+
+h5{
+    color: black;
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.contact-panel{
+    padding: 1em 0em 1em 0em;
+}
+
+hr{
+    border-top: 1px solid #f3f3f3;
+}
+
+.text-row{
+    font-size: 12px !important;
+    margin: 0.7em 0em;
+    display: flex;
+}
+
+.left-half{
+    width: 40%;
+}
+
+span{
+    color: black;
+    font-size: 12px !important;
+
+}

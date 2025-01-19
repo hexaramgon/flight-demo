@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './custom.css'
 
 const SelectGroupOne: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>('');
@@ -12,7 +13,7 @@ const SelectGroupOne: React.FC = () => {
     <div className="mb-4.5">
       <label className="mb-2.5 block text-black dark:text-white">
         {' '}
-        Subject{' '}
+        Airport{' '}
       </label>
 
       <div className="relative z-20 bg-transparent dark:bg-form-input">
@@ -22,12 +23,12 @@ const SelectGroupOne: React.FC = () => {
             setSelectedOption(e.target.value);
             changeTextColor();
           }}
-          className={`relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary ${
+          className={`custom-label relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-5 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary ${
             isOptionSelected ? 'text-black dark:text-white' : ''
           }`}
         >
           <option value="" disabled className="text-body dark:text-bodydark">
-            Select your subject
+            Select your airport
           </option>
           <option value="USA" className="text-body dark:text-bodydark">
             USA

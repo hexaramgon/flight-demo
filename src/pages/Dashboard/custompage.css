@@ -1,0 +1,97 @@
+#title{
+    color: rgb(18, 18, 18);
+    font-size: 30px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+body{
+    background-color: white !important;
+}
+
+.top-row{
+    display: flex;           /* Make the container a flex container */
+    flex-direction: row;     /* Ensure the children are in a row (default is row) */
+    justify-content: space-between; /* Space out the children */
+    width: 100%; 
+    gap: 1rem; 
+}
+
+.outer-contact{
+    padding: 1rem;
+    background: linear-gradient(180deg, #FFFFFF 21%, #CDDBE6 100%);
+}
+
+.sub-form{
+    margin-left: 30%;
+    width: 70%;
+}
+
+.row{
+    padding: 1em 0em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.col-1{
+    width: 75%;
+}
+
+h2{
+    color: black;
+    font-size: 22px !important;
+}
+
+.black{
+    background-color: #161616 !important;
+    transition: all 0.3s ease;   /* Smooth transition for all properties over 0.3 seconds */
+}
+
+.black:hover{
+    background-color: #3f3f3f !important;
+
+}
+
+.outer{
+    padding: 1em;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+}
+
+.custom-label{
+    background-color: #FAFAFA !important;
+    height: 2.5em;
+    border-radius: 10px !important;
+}
+
+label{
+    font-size: 13px;
+    color: #4b4b4b !important;
+    margin-bottom: -20px;
+}
+
+.map-panel{
+    width: 30%;
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    overflow-y: scroll;
+    height: 1100px;
+}
+
+.search{
+    /* background: rgb(255, 255, 255); */
+    height: 40px;
+    width: 98%;
+    padding: 1em;
+    position: absolute;
+    z-index: 100;
+    top:10px;
+    left: 1%;
+    /* border: 1px solid #e7e7e7;
+    border-radius: 8px; */
+}
+
+.test{
+    background-color: white !important;
+    font-size: 13px !important;
+}

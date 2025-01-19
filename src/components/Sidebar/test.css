@@ -1,0 +1,18 @@
+.selected{
+    color: gold !important;
+}
+
+.circle{
+    background: #27272A;
+    border: 1px solid #3F3F46;
+    border-radius: 9999px !important;
+}
+
+.other{
+    margin: 0.2rem 1rem;
+}
+
+.other:hover{
+    background: #27272A !important;
+    border-radius: 9999px ;
+}
