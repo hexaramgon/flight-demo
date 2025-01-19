@@ -33,7 +33,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         trigger.current.contains(target)
       )
         return;
-      setSidebarOpen(false);
+      setSidebarOpen(true);
     };
     document.addEventListener('click', clickHandler);
     return () => document.removeEventListener('click', clickHandler);
@@ -61,8 +61,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:relative ${
-        sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:w-0'
+      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static ${
+        sidebarOpen ? 'translate-x-0' : '-translate-x-full smallboi w-0'
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
@@ -108,7 +108,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             pathname.includes('dashboard')) &&
                           'selected circle bg-graydark dark:bg-meta-4'
                         }`}
-              
                       >
                         <svg
                           className="fill-current"
